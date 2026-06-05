@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/* ─── Tailwind v4: CSS-based theme ───────────────────── */
+@theme {
+  --color-terra:       #C8947A;
+  --color-terra-dark:  #A8725A;
+  --color-terra-light: #E8B49A;
+  --color-mocha:       #3D2314;
+  --color-mocha-light: #5C3D28;
+  --color-sand:        #F2E8D9;
+  --color-sand-dark:   #E8D8C4;
+  --color-cream:       #FAF5EE;
+  --color-muted:       #9A7A62;
+
+  --font-family-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-family-sans:  'Jost', 'Helvetica Neue', sans-serif;
+  --font-family-mono:  ui-monospace, monospace;
+
+  --letter-spacing-widest2: 0.3em;
+  --letter-spacing-widest3: 0.4em;
+}
+
+/* ─── Navbar height token — update this if navbar height changes ── */
+:root {
+  --navbar-h: 72px;
+}
+
+/* ─── Base resets ────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: #FAF5EE;
+  color: #3D2314;
+  font-weight: 300;
+  /* Push all page content below the fixed navbar */
+  padding-top: var(--navbar-h);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+input, textarea, select, button {
+  font-family: var(--font-family-sans);
+  font-weight: 300;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239A7A62' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  padding-right: 20px !important;
+  cursor: pointer;
+}
+
+/* ─── Components ─────────────────────────────────────── */
+@layer components {
+
+  .font-serif { font-family: var(--font-family-serif) !important; }
+  .font-sans  { font-family: var(--font-family-sans) !important; }
+
+  .divider {
+    height: 1px;
+    background: rgba(61, 35, 20, 0.12);
+  }
+
+  .label {
+    display: block;
+    font-family: var(--font-family-sans);
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #9A7A62;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: #C8947A;
+    color: #FAF5EE;
+    font-family: var(--font-family-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    transition: background 0.25s ease, color 0.25s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+  .btn-primary:hover  { background: #3D2314; color: #FAF5EE; }
+  .btn-primary:active { background: #2a1a0e; color: #FAF5EE; }
+
+  .btn-outline {
+    display: inline-block;
+    border: 1.5px solid #C8947A;
+    color: #C8947A;
+    font-family: var(--font-family-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+  }
+  .btn-outline:hover  { background: #C8947A; color: #FAF5EE; border-color: #C8947A; }
+  .btn-outline:active { background: #A8725A; color: #FAF5EE; border-color: #A8725A; }
+
+  .section-pad { padding: 80px 0; }
+}
+
+@media (max-width: 768px) {
+  .section-pad { padding: 56px 0; }
+}
