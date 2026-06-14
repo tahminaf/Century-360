@@ -53,13 +53,13 @@ export default function Footer() {
           <div>
             <p className="label text-sand/40 mb-5">Visit Us</p>
             <address className="not-italic font-sans font-light text-xs text-sand/60 leading-relaxed mb-6">
-              Hicksville, NY<br />
-              Nassau County, Long Island
+              350 S Broadway, Unit 17<br />
+              Hicksville, NY 11801
             </address>
             <p className="label text-sand/40 mb-3">Hours</p>
             <p className="font-sans font-light text-xs text-sand/60 leading-relaxed mb-8">
-              Mon – Fri: 9am – 9pm<br />
-              Sat – Sun: 8am – 8pm
+              Mon – Fri: 8am – 7pm<br />
+              Sat – Sun: 8am – 10pm
             </p>
             <p className="label text-sand/40 mb-4">Follow Us</p>
             <div className="flex items-center gap-5">

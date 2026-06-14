@@ -7,11 +7,13 @@ export default function StructuredData() {
     url: "https://century360.com",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "350 S Broadway, Unit 17",
       addressLocality: "Hicksville",
       addressRegion: "NY",
+      postalCode: "11801",
       addressCountry: "US",
     },
-    openingHours: ["Mo-Fr 09:00-21:00", "Sa-Su 08:00-20:00"],
+    openingHours: ["Mo-Fr 08:00-19:00", "Sa-Su 08:00-22:00"],
     sameAs: ["https://www.instagram.com/century360sauna"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",

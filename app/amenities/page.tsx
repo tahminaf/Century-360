@@ -98,7 +98,6 @@ function ServiceCard({ s }: { s: typeof saunaServices[0] }) {
           <p className="font-sans font-light text-xs text-terra tracking-widest uppercase mt-1">{s.tagline}</p>
         </div>
         <div className="flex items-center gap-6 mt-2 shrink-0">
-          <span className="font-sans font-light text-xs text-muted hidden sm:block">{s.duration}</span>
           <span className="font-serif font-light text-2xl text-terra transition-transform duration-200" style={{ transform: expanded ? "rotate(45deg)" : "none" }}>+</span>
         </div>
       </div>

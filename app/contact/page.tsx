@@ -18,6 +18,113 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* ── Location & Map ───────────────────────────────── */}
+      <section className="section-pad bg-sand/40">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="label text-terra mb-6">Location</p>
+          <h2
+            className="font-serif font-light text-mocha mb-14 leading-[0.95]"
+            style={{ fontSize: "clamp(38px, 5vw, 72px)" }}
+          >
+            Find <em className="italic text-terra">us.</em>
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Map embed */}
+            <div className="w-full relative" style={{ paddingBottom: "75%" }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-73.5160691!3d40.7608304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c280f93cc3857f%3A0x3ea8baa03cbabeb2!2s350%20S%20Broadway%20%2317%2C%20Hicksville%2C%20NY%2011801!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus"
+                className="absolute inset-0 w-full h-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Century 360 Spa & Sauna House location map"
+              />
+            </div>
+
+            {/* Location details */}
+            <div className="space-y-8">
+              {/* Address + CTA */}
+              <div>
+                <p className="font-sans font-light text-xs text-terra tracking-widest uppercase mb-3">Address</p>
+                <p className="font-serif font-light text-2xl text-mocha leading-snug">
+                  350 S Broadway, Unit 17
+                </p>
+                <p className="font-sans font-light text-sm text-muted mt-1">Hicksville, NY 11801</p>
+                <a
+                  href="https://www.google.com/maps/place/350+S+Broadway+%2317,+Hicksville,+NY+11801/@40.7609423,-73.5159364,17.63z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline mt-6 inline-block"
+                >
+                  Get Directions
+                </a>
+              </div>
+
+              <div className="w-full h-px bg-mocha/10" />
+
+              {/* Parking */}
+              <div>
+                <p className="font-sans font-light text-xs text-terra tracking-widest uppercase mb-3">Parking</p>
+                <div className="space-y-2">
+                  {[
+                    "Free private parking lot available on-site",
+                    "Dedicated accessible parking spaces near the entrance",
+                    "Additional street parking available along S Broadway",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="w-1 h-1 rounded-full bg-terra mt-2 shrink-0" />
+                      <span className="font-sans font-light text-sm text-muted leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="w-full h-px bg-mocha/10" />
+
+              {/* Transportation */}
+              <div>
+                <p className="font-sans font-light text-xs text-terra tracking-widest uppercase mb-3">Public Transit</p>
+                <div className="space-y-2">
+                  {[
+                    "LIRR: Hicksville Station (Port Washington & Main Line) — approx. 1 mile away",
+                    "MTA Bus: N20G & N22 routes serve S Broadway directly",
+                    "Rideshare drop-off available at the front of the building",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="w-1 h-1 rounded-full bg-terra mt-2 shrink-0" />
+                      <span className="font-sans font-light text-sm text-muted leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="w-full h-px bg-mocha/10" />
+
+              {/* Accessibility */}
+              <div>
+                <p className="font-sans font-light text-xs text-terra tracking-widest uppercase mb-3">Accessibility</p>
+                <div className="space-y-2">
+                  {[
+                    "Ground-floor entry — no stairs required",
+                    "Wheelchair accessible throughout the facility",
+                    "Accessible restrooms on-site",
+                    "Please contact us in advance for any additional accommodations",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="w-1 h-1 rounded-full bg-terra mt-2 shrink-0" />
+                      <span className="font-sans font-light text-sm text-muted leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Contact Form ─────────────────────────────────── */}
       <section className="section-pad">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -26,8 +133,8 @@ export default function ContactPage() {
               <div className="space-y-8">
                 <div>
                   <p className="font-sans font-light text-xs text-terra tracking-widest uppercase mb-2">Location</p>
-                  <p className="font-serif font-light text-xl text-mocha">Hicksville, New York</p>
-                  <p className="font-sans font-light text-sm text-muted mt-1">Nassau County, Long Island</p>
+                  <p className="font-serif font-light text-xl text-mocha">350 S Broadway, Unit 17</p>
+                  <p className="font-sans font-light text-sm text-muted mt-1">Hicksville, NY 11801</p>
                 </div>
                 <div className="w-full h-px bg-mocha/10" />
                 <div>
@@ -35,11 +142,11 @@ export default function ContactPage() {
                   <div className="space-y-1">
                     <div className="flex justify-between">
                       <span className="font-sans font-light text-sm text-mocha">Monday – Friday</span>
-                      <span className="font-sans font-light text-sm text-muted">9:00 AM – 9:00 PM</span>
+                      <span className="font-sans font-light text-sm text-muted">8:00 AM – 7:00 PM</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-sans font-light text-sm text-mocha">Saturday – Sunday</span>
-                      <span className="font-sans font-light text-sm text-muted">8:00 AM – 8:00 PM</span>
+                      <span className="font-sans font-light text-sm text-muted">8:00 AM – 10:00 PM</span>
                     </div>
                   </div>
                 </div>

@@ -8,48 +8,41 @@ export const metadata: Metadata = {
 
 const plans = [
   {
-    name: "Restore",
-    price: "$89",
+    name: "Glow",
+    price: "$69",
     period: "/mo",
     tagline: "Begin your wellness journey.",
     features: [
-      "Unlimited infrared sauna",
-      "4 cold plunge sessions/mo",
-      "2 red light therapy sessions/mo",
-      "10% off all spa services",
-      "Member-only booking priority",
+      "4 visits/month",
+      "1 complimentary juice",
+      "10% off spa services",
     ],
     featured: false,
   },
   {
-    name: "Balance",
+    name: "Restore",
     price: "$149",
     period: "/mo",
-    tagline: "The full thermal experience.",
+    tagline: "The full wellness experience.",
     features: [
-      "Unlimited infrared + dry sauna",
-      "Unlimited cold plunge",
-      "8 red light therapy sessions/mo",
-      "1 complimentary facial/mo",
-      "15% off all spa services",
-      "Guest pass (1/mo)",
-      "Member-only booking priority",
+      "8 visits/month",
+      "4 complimentary juices",
+      "15% off spa services",
     ],
     featured: true,
   },
   {
-    name: "Elevate",
-    price: "$249",
+    name: "Century VIP",
+    price: "$279",
     period: "/mo",
     tagline: "Unlimited everything.",
     features: [
-      "Unlimited access to all thermal services",
-      "Unlimited red light therapy",
-      "2 complimentary spa services/mo",
-      "20% off all additional services",
-      "Monthly IV infusion credit ($50)",
-      "2 guest passes/mo",
-      "Priority booking always",
+      "Unlimited access",
+      "8 complimentary juices",
+      "25% off spa services",
+      "Priority booking",
+      "1 guest pass/month",
+      "Founding Member perks",
     ],
     featured: false,
   },
@@ -75,6 +68,12 @@ export default function MembershipPage() {
           <p className="font-sans font-light text-sand/50 text-sm max-w-lg leading-relaxed mt-8">
             Join Century 360 and make wellness a non-negotiable part of your life — at one simple monthly rate.
           </p>
+          <div className="inline-flex items-center gap-3 mt-10 border border-terra/40 px-6 py-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-terra shrink-0" />
+            <p className="font-sans font-light text-terra text-xs tracking-[0.2em] uppercase">
+              Founding Members — Limited to First 100
+            </p>
+          </div>
         </div>
       </section>
 
