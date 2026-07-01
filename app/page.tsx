@@ -6,21 +6,26 @@ import FadeIn from "@/components/FadeIn";
 export const metadata: Metadata = {
   title: "Century 360 | Spa & Sauna House — Restore. Reset. Renew.",
   description:
-    "Century 360 Spa & Sauna House in Hicksville, NY. Infrared sauna, cold plunge, red light therapy, IV infusions, lymphatic drainage, facials & more. Book your session today.",
+    "Century 360 Spa & Sauna House in Hicksville, NY. Dry sauna, steam shower, cold plunge, red light therapy, IV infusions, lymphatic drainage & more. Book your session today.",
 };
 
 const services = [
-  { num: "01", name: "Infrared Sauna", desc: "Deep heat therapy to promote circulation and eliminate toxins" },
-  { num: "02", name: "Dry Sauna", desc: "Traditional high-heat sauna for full-body detox" },
+  { num: "01", name: "Dry Sauna", desc: "Traditional high-heat sauna for full-body detox" },
+  { num: "02", name: "Steam Shower", desc: "Steam therapy to open pores and detoxify — with or without Vitamin C" },
   { num: "03", name: "Cold Plunge", desc: "Contrast therapy to reduce inflammation and accelerate recovery" },
   { num: "04", name: "Red Light Therapy", desc: "Cellular rejuvenation and skin renewal through photobiomodulation" },
-  { num: "05", name: "IV Vitamin Infusions", desc: "Targeted wellness drips delivered directly to your bloodstream" },
-  { num: "06", name: "Lymphatic Drainage", desc: "Manual therapy to detox, depuff, and restore flow" },
-  { num: "07", name: "Facials", desc: "Customized treatments for your skin's unique needs" },
-  { num: "08", name: "Body Treatments", desc: "Wraps, scrubs, and therapies for full-body renewal" },
-  { num: "09", name: "Botox & Fillers", desc: "Expert cosmetic injectables for natural-looking results" },
-  { num: "10", name: "Peptides", desc: "Advanced peptide therapies for longevity and vitality" },
-  { num: "11", name: "Laser Hair Removal", desc: "Permanent hair reduction with precision laser technology" },
+  { num: "05", name: "Japanese Head Spa", desc: "A ritual scalp treatment for deep relaxation and hair health" },
+  { num: "06", name: "IV Vitamin Infusions", desc: "Targeted wellness drips delivered directly to your bloodstream" },
+  { num: "07", name: "Botox", desc: "Expert cosmetic injectables for natural-looking results" },
+  { num: "08", name: "Fillers", desc: "Restore volume and smooth lines with precision filler treatments" },
+  { num: "09", name: "Laser Hair Removal", desc: "Permanent hair reduction with precision laser technology" },
+  { num: "10", name: "Waxing", desc: "Smooth, long-lasting hair removal for face and body" },
+  { num: "11", name: "Medical Weight Loss", desc: "Physician-guided programs for sustainable weight management" },
+  { num: "12", name: "Peptides", desc: "Advanced peptide therapies for longevity and vitality" },
+  { num: "13", name: "Body Treatments", desc: "Wraps, scrubs, and therapies for full-body renewal" },
+  { num: "14", name: "VI Chemical Peels", desc: "Advanced peels to resurface and rejuvenate skin" },
+  { num: "15", name: "Skin Pen Microneedling", desc: "Collagen-inducing microneedling for smoother, firmer skin" },
+  { num: "16", name: "Lymphatic Drainage", desc: "Manual therapy to detox, depuff, and restore flow" },
 ];
 
 const pillars = [
@@ -35,7 +40,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative bg-mocha flex flex-col justify-center py-16 px-6 overflow-hidden" style={{ minHeight: "520px" }}>
         <div
-          className="absolute inset-0 opacity-[0.04]"
+          className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
             backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 80px, #C8947A 80px, #C8947A 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, #C8947A 80px, #C8947A 81px)`,
           }}
@@ -59,8 +64,7 @@ export default function HomePage() {
               <Link href="/contact" className="btn-primary">Book a Session</Link>
               <Link
                 href="/amenities"
-                className="btn-outline"
-                style={{ borderColor: "rgba(250,245,238,0.3)", color: "rgba(250,245,238,0.6)" }}
+                className="btn-outline-sand"
               >
                 Explore Services
               </Link>
@@ -189,7 +193,6 @@ export default function HomePage() {
               <Link
                 href="/amenities"
                 className="btn-outline whitespace-nowrap self-start md:self-auto"
-                style={{ borderColor: "rgba(200,148,122,0.4)", color: "#C8947A" }}
               >
                 View All Amenities
               </Link>

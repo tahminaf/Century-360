@@ -122,6 +122,24 @@ select {
   .btn-outline:hover  { background: #C8947A; color: #FAF5EE; border-color: #C8947A; }
   .btn-outline:active { background: #A8725A; color: #FAF5EE; border-color: #A8725A; }
 
+  .btn-outline-sand {
+    display: inline-block;
+    border: 1.5px solid rgba(250,245,238,0.3);
+    color: rgba(250,245,238,0.6);
+    font-family: var(--font-family-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+  }
+  .btn-outline-sand:hover  { background: #FAF5EE; color: #3D2314; border-color: #FAF5EE; }
+  .btn-outline-sand:active { background: #E8D8C4; color: #3D2314; border-color: #E8D8C4; }
+
   .section-pad { padding: 80px 0; }
 }
 

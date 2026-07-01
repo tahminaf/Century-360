@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const saunaServices = [
   {
-    name: "Infrared Sauna",
-    tagline: "Detox. Relax. Rejuvenate.",
-    desc: "Infrared saunas use light to heat the body directly, penetrating deeper into tissue than traditional saunas. Sessions promote circulation, reduce inflammation, aid in muscle recovery, and help eliminate toxins through deep sweat.",
-    benefits: ["Detoxifies the body", "Relaxes the mind", "Improves circulation", "Reduces muscle soreness", "Supports weight management"],
-    duration: "30 or 45 min",
+    name: "Steam Shower",
+    tagline: "Cleanse. Soften. Restore.",
+    desc: "Our steam shower envelops you in moist heat that opens pores, soothes the respiratory system, and softens the skin. Available with or without a Vitamin C infusion for an added antioxidant boost.",
+    benefits: ["Opens pores", "Softens skin", "Eases congestion", "Improves circulation", "Optional Vitamin C infusion"],
+    duration: "20 or 30 min",
   },
   {
     name: "Dry Sauna",
@@ -49,11 +49,53 @@ const spaServices = [
     duration: "60 or 90 min",
   },
   {
-    name: "Botox & Fillers",
+    name: "Japanese Head Spa",
+    tagline: "Slow down, from the scalp up.",
+    desc: "A deeply ritualistic scalp treatment combining cleansing, massage, and steam to relieve tension, stimulate circulation, and support healthy hair growth. An unmatched experience in relaxation.",
+    benefits: ["Relieves tension", "Stimulates circulation", "Supports hair health", "Deep relaxation", "Scalp detoxification"],
+    duration: "60 min",
+  },
+  {
+    name: "Botox",
     tagline: "Subtle. Natural. You.",
-    desc: "Our medical team administers Botox and dermal fillers with a precise, conservative approach — enhancing your natural features, never masking them. From fine lines to volume restoration, results speak for themselves.",
-    benefits: ["Smooths fine lines", "Restores volume", "Natural results", "Quick recovery", "Expert precision"],
+    desc: "Our medical team administers Botox with a precise, conservative approach — softening fine lines and wrinkles while preserving natural expression.",
+    benefits: ["Smooths fine lines", "Natural results", "Quick recovery", "Expert precision", "Long-lasting results"],
+    duration: "30 min",
+  },
+  {
+    name: "Fillers",
+    tagline: "Restore. Balance. Enhance.",
+    desc: "Dermal fillers restore lost volume and enhance natural contours, from lips to cheeks to jawline — administered with care for results that look like you, only refreshed.",
+    benefits: ["Restores volume", "Enhances contours", "Natural-looking results", "Minimal downtime", "Expert precision"],
     duration: "30–60 min",
+  },
+  {
+    name: "Waxing",
+    tagline: "Smooth, simplified.",
+    desc: "Professional waxing services for face and body using gentle, high-quality wax formulated to minimize irritation while delivering smooth, long-lasting results.",
+    benefits: ["Long-lasting smoothness", "Minimizes irritation", "All skin types", "Quick service", "Reduces regrowth over time"],
+    duration: "15–45 min (area dependent)",
+  },
+  {
+    name: "Medical Weight Loss",
+    tagline: "Sustainable results, medically guided.",
+    desc: "Our physician-guided weight loss programs combine medical supervision, personalized protocols, and ongoing support to help you reach your goals safely and sustainably.",
+    benefits: ["Physician-guided", "Personalized protocols", "Ongoing support", "Sustainable results", "Metabolic health support"],
+    duration: "Varies by protocol",
+  },
+  {
+    name: "VI Chemical Peels",
+    tagline: "Resurface. Renew. Reveal.",
+    desc: "The VI Peel combines powerful ingredients to safely and effectively remove damaged skin, revealing smoother, brighter, more even-toned skin beneath — with minimal downtime.",
+    benefits: ["Reduces hyperpigmentation", "Smooths texture", "Minimizes fine lines", "Brightens complexion", "Minimal downtime"],
+    duration: "30–45 min",
+  },
+  {
+    name: "Skin Pen Microneedling",
+    tagline: "Stimulate. Rebuild. Renew.",
+    desc: "SkinPen microneedling creates controlled micro-injuries that stimulate your skin's natural collagen and elastin production, improving texture, tone, and the appearance of scars and fine lines.",
+    benefits: ["Boosts collagen production", "Improves texture", "Reduces scarring", "Minimizes fine lines", "Minimal downtime"],
+    duration: "45–60 min",
   },
   {
     name: "Peptides",

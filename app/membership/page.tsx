@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Membership",
-  description: "Join Century 360 and enjoy unlimited wellness with monthly membership plans. Infrared sauna, cold plunge, red light therapy and more — at one simple monthly rate.",
+  description: "Join Century 360 and enjoy unlimited wellness with monthly membership plans. Dry sauna, steam shower, cold plunge, red light therapy and more — at one simple monthly rate.",
 };
 
 const plans = [
@@ -49,10 +49,10 @@ const plans = [
 ];
 
 const faqs = [
-  { q: "Can I cancel anytime?", a: "Yes. All memberships are month-to-month with no long-term commitment. Cancel anytime with 30 days notice." },
+  { q: "Can I cancel anytime?", a: "All memberships require a minimum three-month commitment. After that, memberships continue month-to-month and can be cancelled with 30 days notice." },
   { q: "Do unused sessions roll over?", a: "Complimentary service credits (like facials) roll over for one month. Unlimited-access services do not require tracking." },
-  { q: "Can I bring a guest?", a: "Balance and Elevate members receive monthly guest passes. Additional guest day passes can be purchased at the front desk." },
-  { q: "Is there a joining fee?", a: "There is a one-time $25 enrollment fee for all new memberships." },
+  { q: "Can I bring a guest?", a: "Century VIP members receive a monthly guest pass. Additional guest day passes can be purchased at the front desk." },
+  { q: "Is there a joining fee?", a: "No. There is no joining fee for any membership." },
   { q: "Can I pause my membership?", a: "Yes. Members may pause their membership once per year for up to 30 days (e.g., for travel or medical reasons)." },
 ];
 

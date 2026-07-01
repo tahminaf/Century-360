@@ -11,9 +11,9 @@ export const metadata: Metadata = {
     template: "%s | Century 360 Spa & Sauna House",
   },
   description:
-    "Century 360 Spa & Sauna House in Hicksville, NY offers infrared sauna, cold plunge, red light therapy, IV vitamin infusions, lymphatic drainage, facials, and more. Restore your body. Reset your mind.",
+    "Century 360 Spa & Sauna House in Hicksville, NY offers dry sauna, steam shower, cold plunge, red light therapy, IV vitamin infusions, lymphatic drainage, and more. Restore your body. Reset your mind.",
   keywords: [
-    "spa hicksville ny","sauna house long island","infrared sauna hicksville",
+    "spa hicksville ny","sauna house long island","steam shower hicksville",
     "cold plunge ny","red light therapy","iv vitamin infusions",
     "lymphatic drainage spa","wellness spa nassau county","century 360",
   ],

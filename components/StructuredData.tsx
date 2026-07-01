@@ -3,7 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "DaySpa",
     name: "Century 360 Spa & Sauna House",
-    description: "Full-spectrum wellness sanctuary in Hicksville, NY offering infrared sauna, cold plunge, red light therapy, IV infusions, facials, and more.",
+    description: "Full-spectrum wellness sanctuary in Hicksville, NY offering dry sauna, steam shower, cold plunge, red light therapy, IV infusions, and more.",
     url: "https://century360.com",
     address: {
       "@type": "PostalAddress",
@@ -19,7 +19,8 @@ export default function StructuredData() {
       "@type": "OfferCatalog",
       name: "Spa & Wellness Services",
       itemListElement: [
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Infrared Sauna" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dry Sauna" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Steam Shower" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cold Plunge" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Red Light Therapy" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "IV Vitamin Infusions" } },
