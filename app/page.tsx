@@ -47,7 +47,7 @@ export default function HomePage() {
         />
         <div className="max-w-7xl mx-auto w-full">
           <FadeIn delay={0.15}>
-            <p className="label text-terra mb-6">Hicksville, NY · Now Open</p>
+            <p className="label text-terra mb-6">Hicksville, NY · Coming Soon</p>
           </FadeIn>
           <FadeIn delay={0.28}>
             <h1

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -47,11 +48,13 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-sand-dark h-96 flex items-center justify-center">
-              <div className="text-center px-8">
-                <p className="font-serif font-light italic text-7xl text-mocha/15">C360</p>
-                <p className="label mt-4 text-mocha/30">Wellness · Beauty · Longevity</p>
-              </div>
+            <div className="relative h-96 overflow-hidden">
+              <Image
+                src="/sauna-stock.jpg"
+                alt="Sauna interior at Century 360"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
