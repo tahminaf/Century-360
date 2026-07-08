@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
+import BookNowButton from "@/components/BookNowButton";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -48,9 +49,9 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary">
+            <BookNowButton className="btn-primary">
               Book Now
-            </Link>
+            </BookNowButton>
           </nav>
 
           <button
@@ -95,13 +96,12 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.48, duration: 0.4 }}
             >
-              <Link
-                href="/contact"
+              <BookNowButton
                 onClick={() => setOpen(false)}
                 className="btn-primary mt-8 text-center block"
               >
                 Book Now
-              </Link>
+              </BookNowButton>
             </motion.div>
           </motion.div>
         )}

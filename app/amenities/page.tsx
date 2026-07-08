@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import BookNowButton from "@/components/BookNowButton";
 
 const saunaServices = [
   {
@@ -148,7 +148,7 @@ function ServiceCard({ s }: { s: typeof saunaServices[0] }) {
           <div className="md:col-span-2">
             <p className="font-sans font-light text-sm text-muted leading-relaxed">{s.desc}</p>
             <div className="mt-6">
-              <Link href="/contact" className="btn-primary text-xs py-3 px-6">Book This Service</Link>
+              <BookNowButton className="btn-primary text-xs py-3 px-6">Book This Service</BookNowButton>
             </div>
           </div>
           <div>
@@ -229,9 +229,9 @@ export default function AmenitiesPage() {
           <h2 className="font-serif font-light text-5xl text-cream leading-tight mb-8">
             Book your visit<br /><em className="italic">today.</em>
           </h2>
-          <Link href="/contact" className="inline-block bg-mocha text-sand font-sans font-light text-[10px] tracking-[0.25em] uppercase py-4 px-10 hover:bg-mocha-light transition-colors">
+          <BookNowButton className="inline-block bg-mocha text-sand font-sans font-light text-[10px] tracking-[0.25em] uppercase py-4 px-10 hover:bg-mocha-light transition-colors">
             Reserve Now
-          </Link>
+          </BookNowButton>
         </div>
       </section>
     </>

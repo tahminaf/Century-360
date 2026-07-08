@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
+import BookNowButton from "@/components/BookNowButton";
 
 export const metadata: Metadata = {
   title: "Century 360 | Spa & Sauna House — Restore. Reset. Renew.",
@@ -61,7 +62,7 @@ export default function HomePage() {
           </FadeIn>
           <FadeIn delay={0.44}>
             <div className="flex flex-col sm:flex-row gap-4 items-start">
-              <Link href="/contact" className="btn-primary">Book a Session</Link>
+              <BookNowButton className="btn-primary">Book a Session</BookNowButton>
               <Link
                 href="/amenities"
                 className="btn-outline-sand"
@@ -351,12 +352,9 @@ export default function HomePage() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.18}>
-            <Link
-              href="/contact"
-              className="inline-block bg-mocha text-sand font-sans font-light text-[10px] tracking-[0.25em] uppercase py-4 px-10 hover:bg-sand hover:text-mocha transition-colors duration-300"
-            >
+            <BookNowButton className="inline-block bg-mocha text-sand font-sans font-light text-[10px] tracking-[0.25em] uppercase py-4 px-10 hover:bg-sand hover:text-mocha transition-colors duration-300">
               Book Now
-            </Link>
+            </BookNowButton>
           </FadeIn>
         </div>
       </section>

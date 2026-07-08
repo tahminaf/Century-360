@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import PageTransition from "@/components/PageTransition";
+import BoulevardScript from "@/components/BoulevardScript";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-cream text-mocha antialiased">
         <StructuredData />
+        <BoulevardScript />
         <Navbar />
         <PageTransition><main>{children}</main></PageTransition>
         <Footer />
