@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -37,17 +38,14 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("sending");
     try {
-      const res = await fetch("https://formspree.io/f/xkgwznle", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) {
-        setStatus("success");
-        setForm({ name: "", email: "", phone: "", service: "", message: "" });
-      } else {
-        setStatus("error");
-      }
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        form,
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
+      );
+      setStatus("success");
+      setForm({ name: "", email: "", phone: "", service: "", message: "" });
     } catch {
       setStatus("error");
     }
