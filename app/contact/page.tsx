@@ -29,9 +29,9 @@ export default function ContactPage() {
             Find <em className="italic text-terra">us.</em>
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Map embed */}
-            <div className="w-full relative" style={{ paddingBottom: "75%" }}>
+            <div className="w-full relative aspect-[4/3] lg:aspect-auto lg:sticky lg:top-32 lg:h-[600px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-73.5160691!3d40.7608304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c280f93cc3857f%3A0x3ea8baa03cbabeb2!2s350%20S%20Broadway%20%2317%2C%20Hicksville%2C%20NY%2011801!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus"
                 className="absolute inset-0 w-full h-full"
